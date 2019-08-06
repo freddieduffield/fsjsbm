@@ -45,6 +45,11 @@ exports[`<App /> mount rendering matches the snapshot 1`] = `
     >
       Click
     </button>
+    <h2 />
+    <input
+      onChange={[Function]}
+      type="text"
+    />
   </div>
 </App>
 `;
@@ -89,5 +94,10 @@ exports[`<App /> shallow rendering matches the snapshot 1`] = `
   >
     Click
   </button>
+  <h2 />
+  <input
+    onChange={[Function]}
+    type="text"
+  />
 </div>
 `;

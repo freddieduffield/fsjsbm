@@ -135,6 +135,15 @@ describe('<App /> shallow rendering', () => {
     expect(toJson(tree)).toMatchSnapshot();
   });
 
+  it('updates className with new State', () => {
+    const wrapper = shallow(<App />);
+    expect(wrapper.find('.blue').length).toBe(1);
+    expect(wrapper.find('.red').length).toBe(0);
+    wrapper.setState({ mainColor: 'red' });
+    expect(wrapper.find('.red').length).toBe(1);
+    expect(wrapper.find('.blue').length).toBe(0);
+  });
+
   it('should have h1 with the text Welcome to React ', () => {
     const wrapper = shallow(<App />);
     expect(wrapper.find('h1').text()).toBe('Welcome to React');
@@ -155,5 +164,22 @@ describe('<App /> shallow rendering', () => {
     expect(wrapper.find('h2').text()).toBe('');
     input.simulate('change', { currentTarget: { value: 'Tyler' } });
     expect(wrapper.find('h2').text()).toBe('Tyler');
+  });
+
+  it('calls componentDidMount, updates P tag text', () => {
+    jest.spyOn(App.prototype, 'componentDidMount');
+
+    const wrapper = shallow(<App />);
+
+    expect(App.prototype.componentDidMount.mock.calls.length).toBe(1);
+    expect(wrapper.find('.lifeCycle').text()).toBe('componentDidMount');
+  });
+
+  it('setProps calls componentWillRecieveProps', () => {
+    jest.spyOn(App.prototype, 'componentWillReceiveProps');
+    const wrapper = shallow(<App />);
+    wrapper.setProps({ hide: true });
+    expect(App.prototype.componentWillReceiveProps.mock.calls.length).toBe(1);
+    expect(wrapper.find('.lifeCycle').text()).toBe('componentWillReceiveProps');
   });
 });

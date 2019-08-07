@@ -1,15 +1,14 @@
-# Learning Plan 
+# Learning Plan
 
-# Part One: Full Stack JavaScript Badman 
+# Part One: Full Stack JavaScript Badman
 
 [Introduction to How to Write an Open Source JavaScript Library](https://egghead.io/lessons/javascript-introduction-to-how-to-write-an-open-source-javascript-library)
 
-- 90m 
+- 90m
 
 ## AWS
 
 [Develop a Serverless Backend using Node.js on AWS Lambda](https://egghead.io/courses/develop-a-serverless-backend-using-node-js-on-aws-lambda)
-
 
 - 15m
 
@@ -17,7 +16,7 @@
 
 - 33m
 
-## Testing 
+## Testing
 
 [Test React Components with Enzyme and Jest](https://egghead.io/courses/test-react-components-with-enzyme-and-jest)
 
@@ -37,31 +36,43 @@
 
 [Introduction to Node: The Fundamentals](https://egghead.io/courses/introduction-to-node-the-fundamentals)
 
-- 84m 
+- 84m
 
-[Pratical Node](https://relx.percipio.com/books/f24aee43-b199-425d-b51e-91fe815d1d4e)  
+[Pratical Node](https://relx.percipio.com/books/f24aee43-b199-425d-b51e-91fe815d1d4e)
+
 - 4h59m
 
 [Working with the Features of Node.js Applications](https://relx.percipio.com/courses/16e91bd0-631c-11e8-a845-7feea7c0e6e7/videos/37024590-631c-11e8-a845-7feea7c0e6e7)
 
 - 1h approx
 
+## JavaScript
+
+[JavaScript Promises in depth](https://egghead.io/courses/javascript-promises-in-depth)
+
+- 51m
+
+[Asynchronous JavaScript with async/await](https://egghead.io/courses/asynchronous-javascript-with-async-await)
+
+- 18m
+
 <br />
 
-__Total Duration : 20 hours__ 
+**Total Duration : 20 hours**
 
 (including some time for writing code)
 
 <br />
 
-## * Outcome 
+## \* Outcome
 
 An full tested serverless isomorphic react app.
 
 ---
+
 # Future
 
-## Web Platform 
+## Web Platform
 
 [HTTP mozilla](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 
@@ -69,25 +80,23 @@ An full tested serverless isomorphic react app.
 
 [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)
 
-
 - The Dom
 - Mouse Events
-- Touch Events 
+- Touch Events
 - Keyboard Events
 - Working with Forms
-- Scrolling Events 
-- Drag and drop 
-- The History API 
-- The GeoLocation API 
-- The web storage api 
-- cookies 
+- Scrolling Events
+- Drag and drop
+- The History API
+- The GeoLocation API
+- The web storage api
+- cookies
 - IndexDDB
 - Web Workers
-- Cors 
+- Cors
 - XHR
 - The fetch API
 - web sockets
 - Getusermedia
-- The stream api 
+- The stream api
 - Webrtc
-

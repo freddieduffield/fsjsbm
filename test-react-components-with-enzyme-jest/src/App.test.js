@@ -182,4 +182,15 @@ describe('<App /> shallow rendering', () => {
     expect(App.prototype.componentWillReceiveProps.mock.calls.length).toBe(1);
     expect(wrapper.find('.lifeCycle').text()).toBe('componentWillReceiveProps');
   });
+
+  it('handleStrings function returns correctly', () => {
+    const wrapper = shallow(<App />);
+
+    const trueReturn = wrapper.instance().handleStrings('hello world');
+
+    const falseReturn = wrapper.instance().handleStrings('');
+
+    expect(trueReturn).toBe(true);
+    expect(falseReturn).toBe(false);
+  });
 });

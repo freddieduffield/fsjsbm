@@ -13,6 +13,65 @@
 			"output": {
 				"securityType": "API_KEY"
 			}
+		},
+		"peopleapi": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "peoplefunction",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			]
+		}
+	},
+	"function": {
+		"peoplefunction": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"dependsOn": [
+				{
+					"category": "api",
+					"resourceName": "AmplifyTodoApp",
+					"attributes": [
+						"GraphQLAPIIdOutput",
+						"GraphQLAPIEndpointOutput"
+					]
+				}
+			]
+		},
+		"S3Trigger72477fdb": {
+			"service": "Lambda",
+			"providerPlugin": "awscloudformation",
+			"build": true
+		}
+	},
+	"storage": {
+		"amplifys3storage": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "S3Trigger72477fdb",
+					"attributes": [
+						"Name",
+						"Arn",
+						"LambdaExecutionRole"
+					]
+				}
+			]
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation"
 		}
 	}
 }

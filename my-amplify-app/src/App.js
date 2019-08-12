@@ -3,36 +3,63 @@ import React, {Component} from 'react';
 import './App.css';
 
 import {withAuthenticator} from 'aws-amplify-react'
-import { Auth, API, graphqlOperation } from 'aws-amplify'
+// import { API } from 'aws-amplify'
+import { storage } from 'aws-amplify'
 
 
-const ListTodos = ` 
-  query { 
-    listTodos {
-      items { 
-        id name description completed 
-      }
-    }
-  }`
+// const ListTodos = ` 
+//   query { 
+//     listTodos {
+//       items { 
+//         id name description completed 
+//       }
+//     }
+//   }`
 
   class App extends Component {
-    state = {todos: []}
+    state = {fileUrl: '', file:'', filename: ''}
 
-    async componentDidMount() {
-      const todoData = await API.graphql(graphqlOperation(ListTodos))
-      this.setState({todos: todoData.data.listTodos.items})
+    handleChange = e => {
+      const file = e.target.files[0]
+      this.setState({
+        fileUrl: URL.createObjectURL(file),
+        file,
+        filename: file.name
+      })
     }
+
+    saveFile = () => {
+      Storage.put(this.state.filename, this.state.file)
+        .then(() => {
+
+          console.log('successfully saved file!');
+          this.setState({fileUrl: '', file: '', filename: ''})
+        }
+          )
+        .catch(err => {
+          console.log('error updating file', err);
+        })
+    }
+
+    // async componentDidMount() {
+    //   const data = await API.get('peopleapi', '/people')
+    //   this.setState({people: data.people})
+    // }
     render() {
       return (
         <div>
-          {
-            this.state.todos.map((todo, i) => (
+          {/* {
+            this.state.people.map((person, i) => (
               <div>
-                <h3>{todo.name}</h3>
-                <p>{todo.description}</p>
+                <h3>{person.name}</h3>
+                <p>{person.hair_color}</p>
               </div>
             ))
-          }
+          } */}
+
+          <input type="file" onChange={this.handleChange} /> 
+          <img src={this.state.fileUrl} />
+          <button onClick={this.saveFile}>Save File</button>
         </div>
       )
     }

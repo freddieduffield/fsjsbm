@@ -8,19 +8,19 @@
 
 ## AWS
 
-[Develop a Serverless Backend using Node.js on AWS Lambda](https://egghead.io/courses/develop-a-serverless-backend-using-node-js-on-aws-lambda)
+[Develop a Serverless Backend using Node.js on AWS Lambda](https://egghead.io/courses/develop-a-serverless-backend-using-node-js-on-aws-lambda) ☑️
 
 - 15m
 
-[Building Serverless Web Applications with React & AWS Amplify](https://egghead.io/courses/building-serverless-web-applications-with-react-aws-amplify)
+[Building Serverless Web Applications with React & AWS Amplify](https://egghead.io/courses/building-serverless-web-applications-with-react-aws-amplify) ☑️
 
-- 33m ☑️
+- 33m
 
 ## Testing
 
-[Test React Components with Enzyme and Jest](https://egghead.io/courses/test-react-components-with-enzyme-and-jest)
+[Test React Components with Enzyme and Jest](https://egghead.io/courses/test-react-components-with-enzyme-and-jest) ☑️
 
-- 41m️ **☑️**
+- 41m️
 
 ## React
 
@@ -31,6 +31,22 @@
 [React Context for State Management](https://egghead.io/courses/react-context-for-state-management)
 
 - 35m
+
+[Simplify React Apps with React Hooks](https://egghead.io/courses/simplify-react-apps-with-react-hooks)
+
+- 38m
+
+[Reusable State and Effects with React Hooks](https://egghead.io/courses/reusable-state-and-effects-with-react-hooks)
+
+- 57m
+
+[Higher Order Components with Functional Patterns Using Recompose](https://egghead.io/courses/higher-order-components-with-functional-patterns-using-recompose)
+
+- 48m
+
+[Build a Server Rendered + Code Split App in React with React Universal Component](https://egghead.io/courses/build-a-server-rendered-code-split-app-in-react-with-react-universal-component)
+
+- 45m
 
 ## Node
 
@@ -47,6 +63,10 @@
 - 1h approx
 
 ## JavaScript
+
+[JavaScript ES2019 in Practice](https://egghead.io/courses/javascript-es2019-in-practice)
+
+- 28m
 
 [JavaScript Promises in depth](https://egghead.io/courses/javascript-promises-in-depth)
 

@@ -14,13 +14,13 @@
 
 [Building Serverless Web Applications with React & AWS Amplify](https://egghead.io/courses/building-serverless-web-applications-with-react-aws-amplify)
 
-- 33m
+- 33m ☑️
 
 ## Testing
 
 [Test React Components with Enzyme and Jest](https://egghead.io/courses/test-react-components-with-enzyme-and-jest)
 
-- 41m
+- 41m️ **☑️**
 
 ## React
 

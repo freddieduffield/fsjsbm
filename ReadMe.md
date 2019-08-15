@@ -48,19 +48,23 @@
 
 - 45m
 
+[Build a Server-rendered ReactJS Application with Next.js](https://egghead.io/courses/build-a-server-rendered-reactjs-application-with-next-js)
+
+- 31m
+
 ## Node
 
 [Introduction to Node: The Fundamentals](https://egghead.io/courses/introduction-to-node-the-fundamentals)
 
 - 84m
 
-[Pratical Node](https://relx.percipio.com/books/f24aee43-b199-425d-b51e-91fe815d1d4e)
-
-- 4h59m
-
 [Working with the Features of Node.js Applications](https://relx.percipio.com/courses/16e91bd0-631c-11e8-a845-7feea7c0e6e7/videos/37024590-631c-11e8-a845-7feea7c0e6e7)
 
 - 1h approx
+
+[Node JS: Advanced Concepts](https://relxlearning.udemy.com/advanced-node-for-developers/)
+
+- 16h
 
 ## JavaScript
 
@@ -78,9 +82,9 @@
 
 <br />
 
-**Total Duration : 20 hours**
+**Total Duration : 1,593mins or 26 hours**
 
-(including some time for writing code)
+36 hours (including some time for writing code)
 
 <br />
 

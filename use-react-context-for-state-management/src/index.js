@@ -3,16 +3,17 @@ import ReactDOM from 'react-dom';
 import LoginPage from './LoginPage';
 import MainPage from './MainPage';
 import { UserProvider, UserConsumer} from './UserContext';
+import { EmailProvider, EmailConsumer} from './EmailContext';
 
 import './index.css';
 
 function Root() {
   return (
     <UserConsumer>
-      {({user}) => user ? (
+      {({ user, handleLogin }) => user ? (
         <MainPage />
         ) : (
-        <LoginPage onLogin={this.handleLogin} />
+        <LoginPage onLogin={handleLogin} />
       )}
     </UserConsumer>
   );
@@ -20,7 +21,9 @@ function Root() {
 
 ReactDOM.render(
   <UserProvider>
+    <EmailProvider>
     <Root />
+    </EmailProvider>
   </UserProvider>, 
   document.querySelector('#root')
 );

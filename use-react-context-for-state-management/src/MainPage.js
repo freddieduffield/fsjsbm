@@ -7,11 +7,12 @@ import { EmailConsumer } from './EmailContext'
 const MainPage = () => (
   <EmailConsumer>
     {({currentEmail}) => 
-    <main>
-      <Header />
-      {currentEmail ? <MessageViewer /> : <MessageList /> }
-    </main>
-  </EmailConsumer>}
+      <main>
+        <Header />
+        {currentEmail ? <MessageViewer /> : <MessageList /> }
+      </main>
+    }
+  </EmailConsumer>
 );
 
 export default MainPage;

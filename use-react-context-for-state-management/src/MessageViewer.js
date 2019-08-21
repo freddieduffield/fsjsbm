@@ -3,10 +3,9 @@ import { EmailConsumer } from './EmailContext'
 
 const MessageViewer = () => (
   <EmailConsumer>
-    {
-    ({currentEmail, onSelectEmail}) =>  
-    <button onClick={() => onSelectEmail(null)}>Back</button>
+    {({currentEmail, onSelectEmail}) =>  
       <div className="MessageViewer">
+        <button onClick={() => onSelectEmail(null)}>Back</button>
         <h2>{currentEmail.subject}</h2>
         <div>{currentEmail.body}</div>
       </div>

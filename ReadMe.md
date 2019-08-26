@@ -28,7 +28,7 @@
 
 - 56m
 
-[React Context for State Management](https://egghead.io/courses/react-context-for-state-management)
+[React Context for State Management](https://egghead.io/courses/react-context-for-state-management) ☑️️
 
 - 35m
 

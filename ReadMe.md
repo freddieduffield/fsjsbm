@@ -40,10 +40,6 @@
 
 - 57m
 
-[Higher Order Components with Functional Patterns Using Recompose](https://egghead.io/courses/higher-order-components-with-functional-patterns-using-recompose)
-
-- 48m
-
 [Build a Server Rendered + Code Split App in React with React Universal Component](https://egghead.io/courses/build-a-server-rendered-code-split-app-in-react-with-react-universal-component)
 
 - 45m

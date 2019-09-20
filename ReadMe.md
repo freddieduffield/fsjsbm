@@ -2,10 +2,6 @@
 
 # Part One: Full Stack JavaScript Badman
 
-[Introduction to How to Write an Open Source JavaScript Library](https://egghead.io/lessons/javascript-introduction-to-how-to-write-an-open-source-javascript-library)
-
-- 90m
-
 ## AWS
 
 [Develop a Serverless Backend using Node.js on AWS Lambda](https://egghead.io/courses/develop-a-serverless-backend-using-node-js-on-aws-lambda) ☑️
@@ -49,14 +45,6 @@
 - 31m
 
 ## Node
-
-[Introduction to Node: The Fundamentals](https://egghead.io/courses/introduction-to-node-the-fundamentals)
-
-- 84m
-
-[Working with the Features of Node.js Applications](https://relx.percipio.com/courses/16e91bd0-631c-11e8-a845-7feea7c0e6e7/videos/37024590-631c-11e8-a845-7feea7c0e6e7)
-
-- 1h approx
 
 [Node JS: Advanced Concepts](https://relxlearning.udemy.com/advanced-node-for-developers/)
 

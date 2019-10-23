@@ -66,7 +66,7 @@
 
 - 53m 
 
-[JavaScript Promises in depth](https://egghead.io/courses/javascript-promises-in-depth)
+~~[JavaScript Promises in depth](https://egghead.io/courses/javascript-promises-in-depth)~~ ☑️️
 
 - 51m
 

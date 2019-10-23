@@ -30,10 +30,10 @@ const MessageList = () => {
   )
 };
 
-const Email = React.memo({ email, onClick }) => (
+const Email = React.memo(({ email, onClick }) => (
   <li onClick={onClick}>
     <div className="subject">{email.subject}</div>
     <div className="preview">{email.preview}</div>
   </li>
-);
+));
 export default MessageList;

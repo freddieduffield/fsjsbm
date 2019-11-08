@@ -70,7 +70,7 @@
 
 - 51m
 
-[Asynchronous JavaScript with async/await](https://egghead.io/courses/asynchronous-javascript-with-async-await)
+[Asynchronous JavaScript with async/await](https://egghead.io/courses/asynchronous-javascript-with-async-await) ☑️️
 
 - 18m
 
